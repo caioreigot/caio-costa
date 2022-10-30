@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Caio Costa</title>
         <link rel="icon" href="/c.svg" />
+        <meta name="google-site-verification" content="l_ieFlgnugdFJtkyfAyw_4pZKlBGWGq3mt1mQAbWPMM" />
         <meta name="description" content="Site e blog pessoal sobre tecnologia" />
         <meta property="og:title" content="Caio Costa" />
         <meta property="og:description" content="Site e blog pessoal sobre tecnologia" />
