@@ -24,7 +24,7 @@ export default function Home() {
           Me chamo Caio, sou um <span className="text-blue">programador full stack</span> brasileiro
           e desenvolvo aplicações web usando as tecnologias mais atuais do mercado.
         </h2>
-        <a href="mailto:caioreigot@gmail.com?subject=Oi, Caio!" className="hover:cursor-pointer mt-10 border border-orange-3 font-semibold text-xl text-orange-1 py-4 px-6 hover:bg-orange-3 active:brightness-110 rounded">
+        <a href="mailto:caioreigot@gmail.com?subject=Oi, Caio!" className="hover:cursor-pointer mt-10 border rounded border-orange-3 font-semibold text-xl text-orange-1 py-4 px-6 hover:bg-orange-3 active:brightness-110 transition-all-200 ">
           Me mande um e-mail
         </a>
         <div className="absolute bottom-8 text-base flex flex-col items-center justify-center text-orange-3 hide-when-less-420h">
