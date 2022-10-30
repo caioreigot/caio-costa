@@ -40,22 +40,24 @@ export default function renderPostContent(
   }
 
   function addStyledCode(code: string) {
-    const parser = (function(language) {
+    const language = jsonConverter.currentParameters.language;
+
+    const parser = (function() {
       switch (language) {
         case 'typescript':
           return parserTypeScript;
         case 'html':
           return parserHtml;
         default:
-          return parserTypeScript;
+          return null;
       }
-    })(jsonConverter.currentParameters.language);
+    })();
 
-    const prettierCode = prettier.format(code, {
-      semi: true,
-      parser: jsonConverter.currentParameters.language,
-      plugins: [parser]
-    });
+    /* Formatar com o prettier caso exista um parser para a linguagem,
+    caso contrário, usa a pŕopria string passada, sem formatar */
+    const codeString = parser 
+      ? prettier.format(code, { semi: true, parser: language, plugins: [parser] })
+      : code;
 
     const codeTitle = jsonConverter.currentParameters.title?.split(',');
     const highlightLines = jsonConverter.currentParameters.highlightLines?.split(',');
@@ -63,12 +65,16 @@ export default function renderPostContent(
     jsxElements.push(
       <CodeBlock
         title={codeTitle}
-        codeString={prettierCode}
+        language={language}
+        codeString={codeString}
         highlightLines={highlightLines}
         className="my-5"
         key={jsxElements.length} 
       />
     );
+
+    // Limpa os parâmetros
+    jsonConverter.currentParameters = {};
   }
 
   // Iterando por todas as linhas do content

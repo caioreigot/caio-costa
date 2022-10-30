@@ -91,7 +91,7 @@ export default function PostView({ post }: PostProps) {
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="instant-enter-animation instant-anim m-2 sm:m-0 sm:w-post-view-clamp flex flex-row">
+        <div className="instant-enter-animation instant-anim m-2 sm:m-0 sm:w-post-view-clamp max-w-full flex flex-row">
 
           {/* Bloco da esquerda (a postagem em si) */}
           <div className={`p-6 mb-4 w-full md:w-3/4 border border-blue-1 border-t-2 ${borderTopColor}`}>

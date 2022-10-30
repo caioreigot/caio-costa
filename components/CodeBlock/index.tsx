@@ -3,9 +3,10 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 
 interface CodeBlockProps {
   title: string | null;
+  language: string;
   codeString: string;
   className: string;
-  highlightLines?: number[]
+  highlightLines?: number[];
 }
 
 /**
@@ -28,12 +29,12 @@ function highlightLines(container: HTMLElement, highlightLines: number[]) {
 
 export default function CodeBlock(props: CodeBlockProps) {
   return (
-    <div className={`flex flex-col ${props.className ?? ''}`}>
+    <div className={`flex flex-col overflow-hidden ${props.className ?? ''}`}>
       {props.title &&
         <p className="w-full px-6 py-2 md:py-1 bg-blue-3 text-blue">{props.title}</p>
       }
       <div ref={el => el && props.highlightLines && highlightLines(el, props.highlightLines)} className="relative p-4 bg-blue-1">
-        <SyntaxHighlighter className="custom-horizontal-scrollbar" language="typescript" style={dracula} wrapLines={true}>
+        <SyntaxHighlighter style={dracula} wrapLines={true} className="custom-horizontal-scrollbar w-full" language={props.language}>
           {props.codeString}
         </SyntaxHighlighter>
       </div>

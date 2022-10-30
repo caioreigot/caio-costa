@@ -94,13 +94,15 @@ Precisa de fechamento.
 Esta palavra reservada precisa de parâmetros, que precisam ser escritos com um espaço entre eles.
 Precisa de fechamento.
 
-### Parâmetros obrigatórios:
-``` language ``` = a linguagem relativa ao código que será escrito
+### Parâmetros opcionais:
+``` language ``` = a linguagem relativa ao código que será escrito (caso não seja fornecida ou a linguagem não tenha suporte configurado, o código não será formatado, mas você ainda pode pular linhas usando "\n" e identar com espaços)
 > language=typescript
 
-### Parâmetros opcionais:
 ``` highlightLines ``` = as linhas, separadas por vírgulas e sem espaço, que devem ser destacadas no código
 > highlightLines=5,6,7
+
+``` title ``` = o título para o código (pode ser o nome do arquivo, por exemplo)
+> title=App.tsx
 
 ## Exemplo de tudo junto:
 ``` json
@@ -111,7 +113,7 @@ Precisa de fechamento.
   "Veja o código <bold>abaixo</bold>:",
   "%HTML",
 
-  "%CODE language=typescript highlightLines=1",
+  "%CODE title=ArrowFunction.ts language=typescript highlightLines=1",
   "const arrowFunction = () => console.log('Sou uma Arrow Function!')",
   "%CODE"
 ]

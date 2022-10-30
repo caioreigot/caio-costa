@@ -5,6 +5,11 @@
       "textColor": "text-red",
       "backgroundColor": "bg-red"
     },
+    "TYPESCRIPT": {
+      "borderColor": "border-t-[#3684da]",
+      "textColor": "text-[#3684da]",
+      "backgroundColor": "bg-[#3684da]"
+    },
     "JAVASCRIPT": {
       "borderColor": "border-t-yellow",
       "textColor": "text-yellow",
