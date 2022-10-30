@@ -1,0 +1,7 @@
+@layer utilities {
+  @media (max-height: 420px) {
+    .hide-when-less-420h {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@layer utilities {
+  .type-cursor-animation {
+    opacity: 0;
+    transform: translateX(-12px);
+    transition: transform 800ms ease-in-out, opacity 600ms;
+  }
+
+  .bounce-down-animation {
+    animation: bounce 2500ms infinite;
+    animation-delay: 2s;
+  }
+
+  .instant-enter-animation {
+    animation: instant-enter-animation 800ms ease;
+  }
+
+  .enter-animation {
+    opacity: 0;
+    transform: translateX(-3%);
+    transition: opacity 800ms ease, transform 500ms ease-out;
+  }
+
+  .enter-animation.active {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  .quick-exit-animation {
+    animation: quick-exit-animation 800ms forwards;
+  }
+
+  .fill-animation {
+    width: 0%;
+    transition: width 1300ms ease-out;
+  }
+
+  .fill-animation.active {
+    width: 100%;
+  }
+
+  .transition-all-200 {
+    transition: all 200ms ease;
+  }
+
+  .delay-100 {
+    transition-delay: 100ms;
+  }
+
+  .delay-200 {
+    transition-delay: 200ms;
+  }
+
+  @keyframes quick-exit-animation {
+    50% {
+      transform: translateX(20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-2px);
+    }
+    50% {
+      transform: translateY(2px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    70% {
+      transform: translateY(2px);
+    }
+  }
+
+  @keyframes instant-enter-animation {
+    from {
+      opacity: 0;
+      transform: translateX(-3%);
+    }
+    60% {
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

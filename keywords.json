@@ -1,0 +1,19 @@
+{
+  "data": {
+    "DESENVOLVIMENTO WEB": {
+      "borderColor": "border-t-red",
+      "textColor": "text-red",
+      "backgroundColor": "bg-red"
+    },
+    "JAVASCRIPT": {
+      "borderColor": "border-t-yellow",
+      "textColor": "text-yellow",
+      "backgroundColor": "bg-yellow"
+    },
+    "REACT": {
+      "borderColor": "border-t-blue-react",
+      "textColor": "text-blue-react",
+      "backgroundColor": "bg-blue-react"
+    }
+  }
+}
