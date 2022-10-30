@@ -79,7 +79,7 @@ export default function PostView({ post }: PostProps) {
       </Head>
 
       {/* Barra superior que indica o quanto o usuário desceu a página */}
-      <div ref={el => el && trackScrollPercentage(el)} className="sticky top-0 w-0 h-2 lg:h-1 bg-gradient-to-r from-orange-2 to-orange-3"></div>
+      <div ref={el => el && trackScrollPercentage(el)} className="sticky top-0 w-0 h-2 z-50 lg:h-1 bg-gradient-to-r from-orange-2 to-orange-3"></div>
 
       <div className="w-full">
         <Link href="/posts" className="flex flex-row w-fit items-center justify-start m-5 mb-6 text-orange-3 select-none hover:cursor-pointer">
