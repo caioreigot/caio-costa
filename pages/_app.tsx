@@ -13,10 +13,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Site e blog pessoal sobre tecnologia" />
         <meta property="og:title" content="Caio Costa" />
         <meta property="og:description" content="Site e blog pessoal sobre tecnologia" />
-        <meta property="og:type" content="article" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:url" content="https://caio-costa.vercel.app/" />
-        <meta property="og:image" content="https://user-images.githubusercontent.com/62410044/198860813-fe4dbc85-5947-42ad-be3a-5375f1398a17.png" />
+        <meta property="og:image" content="https://user-images.githubusercontent.com/62410044/198909936-a6a8483b-5726-48e3-8de8-916b1f1f195a.png" />
       </Head>
       <Component {...pageProps} />
     </Fragment>

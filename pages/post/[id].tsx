@@ -74,8 +74,6 @@ export default function PostView({ post }: PostProps) {
         <meta property="og:description" content={post.json.description} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://caio-costa.vercel.app/post/${post.slug}`} />
-        <meta property="og:locale" content="pt_BR" />
-        <meta property="og:image" content="https://user-images.githubusercontent.com/62410044/198860813-fe4dbc85-5947-42ad-be3a-5375f1398a17.png" />
       </Head>
 
       {/* Barra superior que indica o quanto o usuário desceu a página */}
