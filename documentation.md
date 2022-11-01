@@ -3,10 +3,10 @@
 As postagens da página são renderizadas a partir de json's armazenados no banco de dados.
 
 Programei alguns detalhes adicionais para facilitar o trabalho na hora de escrever meus posts, adicionando
-dinâmicamente textos, tópicos, blocos de códigos estilizados, etc. conforme é possível ver nos arquivos de
-nome começados por "render", presentes em "src/pages/PostView".
+dinâmicamente textos, tópicos, blocos de códigos estilizados, etc. conforme é possível ver no script
+localizado em "/scripts/JsonConverter.tsx"
 
-O código do conversor basicamente lê o arquivo json e cria componentes para o React renderizar, por exemplo:
+O código do conversor basicamente lê as linhas do json e cria componentes para o React renderizar, por exemplo:
 se eu estiver escrito um tópico, ele irá aumentar o tamanho da fonte e alterar a cor, assim como adicionar
 o tópico ao sumário.
 
@@ -69,24 +69,11 @@ Precisa de fechamento.
 ]
 ```
 
-``` %HTML ``` o mesmo que %TEXT, porém é usado para declarar que as próximas linhas se comportarão como um HTML.
-Precisa de fechamento.
-- Exemplo:
-``` json
-[
-  "%HTML",
-  "<bold>Eu sou uma tag bold</bold>"
-  "%HTML"
-]
-```
-
 ``` %TOPIC ``` é usado para declarar um tópico da postagem, não precisa ser fechado, e o tópico deverá ser escrito após um espaço na mesma linha, por exemplo:
 ``` json
 [
   "%TOPIC Eu sou um tópico da postagem",
-  "%TEXT",
-  "Sou um texto",
-  "%TEXT"
+  "Sou um texto"
 ]
 ```
 
@@ -107,15 +94,30 @@ Precisa de fechamento.
 ## Exemplo de tudo junto:
 ``` json
 "content": [
+  "%TEXT",
+  "Eu gosto muito da tag <bold></bold>",
+  "%TEXT",
+
   "%TOPIC Como escrever uma arrow function",
-  
-  "%HTML",
+
   "Veja o código <bold>abaixo</bold>:",
-  "%HTML",
 
   "%CODE title=ArrowFunction.ts language=typescript highlightLines=1",
   "const arrowFunction = () => console.log('Sou uma Arrow Function!')",
   "%CODE"
+]
+```
+
+``` %CLOSETOP ``` tudo o que estiver dentro do bloco %CLOSETOP ficará mais próximo um do outro (menos margens no eixo vertical) 
+Precisa de fechamento.
+``` json
+[
+  "Veja estas contas:",
+  
+  "%CLOSETOP",
+  "1+1=2",
+  "8/2=4",
+  "%CLOSETOP"
 ]
 ```
 
