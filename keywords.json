@@ -5,6 +5,11 @@
       "textColor": "text-red",
       "backgroundColor": "bg-red"
     },
+    "CIÊNCIAS DA COMPUTAÇÃO": {
+      "borderColor": "border-t-orange-2",
+      "textColor": "text-orange-2",
+      "backgroundColor": "bg-orange-2"
+    },
     "TYPESCRIPT": {
       "borderColor": "border-t-[#3684da]",
       "textColor": "text-[#3684da]",
