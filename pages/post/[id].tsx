@@ -91,7 +91,7 @@ export default function PostView({ post }: PostProps) {
       <div className="flex flex-col items-center justify-center">
         <main className="instant-enter-animation instant-anim w-full sm:w-post-view-clamp p-2 md:p-0 flex flex-row">
           {/* Bloco da esquerda (a postagem em si) */}
-          <main className={`p-6 mb-4 w-full md:w-3/4 border border-blue-1 border-t-2 ${borderTopColor}`}>
+          <main className={`p-6 mb-4 w-full min-w-[250px] md:w-3/4 border border-blue-1 border-t-2 ${borderTopColor}`}>
             <h2 className={`mt-4 mb-12 ${textColor} text-xl tracking-widest`}>
               {post.json.keyword}
             </h2>

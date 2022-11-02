@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='shadow-xl'>
+    <div className='shadow-xl min-w-[250px]'>
       <div className="enter-animation relative h-screen w-full flex flex-col justify-center items-center px-6 text-white text-center">
         <h1 className="text-2xl sm:text-4xl mb-3 text-orange-3">
           Procurando por um desenvolvedor?
