@@ -41,7 +41,7 @@ export default function Home() {
         <h2 className="text-center mt-20 mb-1 mx-4 font-semibold text-3xl text-blue">
           UM POUCO SOBRE MIM
         </h2>
-        <p className="w-home-clamp text-justify lg:text-center text-xl mt-10">
+        <p className="w-home-clamp text-center text-lg lg:text-xl mt-10">
           Sempre fui uma pessoa curiosa e interessada em aprender. Para mim, a programação se mostrou uma área muito
           gratificante e mágica, onde pude canalizar toda minha hiperatividade, curiosidade e gosto por criação em um
           só lugar. Sou um programador com conhecimento em ambas as áreas do desenvolvimento web, construo interfaces
