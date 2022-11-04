@@ -1,5 +1,5 @@
 import { Post } from '@prisma/client';
-import { prisma } from '../prisma/prismaClient';
+import { prisma } from '../../prisma/prismaClient';
 
 export default async function fetchSinglePost(postSlug: string): Promise<Post | null> {
   const post = await prisma.post.findUnique({

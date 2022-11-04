@@ -1,9 +1,0 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-@import "./customScrollbar.css";
-@import "./animations.css";
-@import "./postTagStyles.css";
-@import "./customQueries.css";
-@import "./customStyles.css";

@@ -1,6 +1,6 @@
 import { Post as PrismaPost } from '@prisma/client';
 import { Post as FormattedPost, PostJson } from '../types';
-import { prisma } from '../prisma/prismaClient';
+import { prisma } from '../../prisma/prismaClient';
 
 export default async function fetchAllPosts(): Promise<FormattedPost[]> {
   const posts = await prisma.post.findMany();
