@@ -35,6 +35,7 @@ module.exports = {
         'home-clamp': 'clamp(0px, 90%, 850px)',
         'posts-clamp': 'clamp(0px, 90%, 1200px)',
         'post-view-clamp': 'clamp(0px, 90%, 1300px)',
+        '404-clamp': 'clamp(150px, 90%, 320px)',
       },
       boxShadow: {
         card: '0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%)',

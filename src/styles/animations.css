@@ -38,6 +38,17 @@
     width: 100%;
   }
 
+  .go-up {
+    animation: go-up 500ms forwards;
+    animation-delay: 200ms;
+  }
+
+  .show-in-500ms {
+    animation: show 200ms forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.4, 1, 0.7);
+    animation-delay: 600ms;
+  }
+
   .transition-all-200 {
     transition: all 200ms ease;
   }
@@ -88,6 +99,18 @@
       transform: translateX(0%);
     }
     100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes go-up {
+    to {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes show {
+    to {
       opacity: 1;
     }
   }
