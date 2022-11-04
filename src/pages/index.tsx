@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className='shadow-xl min-w-[250px]'>
-      <div className="enter-animation relative h-screen w-full flex flex-col justify-center items-center px-6 text-white text-center">
+      <main className="enter-animation relative h-screen w-full flex flex-col justify-center items-center px-6 text-white text-center">
         <h1 className="text-2xl sm:text-4xl mb-3 text-orange-3">
           Procurando por um desenvolvedor?
         </h1>
@@ -33,7 +33,7 @@ export default function Home() {
           </p>
           <Icon className="bounce-down-animation" icon="line-md:arrow-down-circle" width="24" height="24" />
         </div>
-      </div>
+      </main>
 
       <NavBar />
 
