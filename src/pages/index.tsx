@@ -61,24 +61,21 @@ export default function Home() {
 
         <div className="w-home-clamp flex flex-row flex-wrap mt-10">
           <SimpleCard icon="logos:react" className="enter-animation flex-grow m-2 before:bg-blue-react">React</SimpleCard>
-          <SimpleCard icon="vscode-icons:file-type-node" className="enter-animation lg:delay-100 flex-grow m-2 before:bg-green-node">Node.js</SimpleCard>
-          <SimpleCard icon="logos:tailwindcss-icon" className="enter-animation lg:delay-200 flex-grow m-2 before:bg-blue-tailwind">Tailwind</SimpleCard>
-          <SimpleCard icon="logos:typescript-icon" className="enter-animation flex-grow m-2 before:bg-[#3684da]">TypeScript</SimpleCard>
-          <SimpleCard icon="teenyicons:nextjs-solid" className="enter-animation lg:delay-100 flex-grow m-2 before:bg-[#fff]">Next.js</SimpleCard>
-          <SimpleCard icon="file-icons:php" className="enter-animation lg:delay-200 flex-grow m-2 before:bg-[#8093cf]" iconColor="#8093cf" >PHP</SimpleCard>
-          <SimpleCard icon="vscode-icons:file-type-prisma" className="enter-animation flex-grow m-2 before:bg-[#e7e7e7]">Prisma</SimpleCard>
-          <SimpleCard icon="logos:kotlin-icon" className="enter-animation lg:delay-100 flex-grow m-2 before:bg-[#eb33a8]">Kotlin</SimpleCard>
-          <SimpleCard icon="cib:ansible" className="enter-animation lg:delay-200 flex-grow m-2 before:bg-[#fff]">Ansible</SimpleCard>
+          <SimpleCard icon="logos:angular-icon" className="enter-animation lg:delay-100 flex-grow m-2 before:bg-[#fff]">Angular</SimpleCard>
+          <SimpleCard icon="vscode-icons:file-type-node" className="enter-animation lg:delay-200 flex-grow m-2 before:bg-green-node">Node</SimpleCard>
+          <SimpleCard icon="logos:tailwindcss-icon" className="enter-animation flex-grow m-2 before:bg-blue-tailwind">Tailwind</SimpleCard>
+          <SimpleCard icon="logos:typescript-icon" className="enter-animation lg:delay-100 flex-grow m-2 before:bg-[#3684da]">TypeScript</SimpleCard>
+          <SimpleCard icon="teenyicons:nextjs-solid" className="enter-animation lg:delay-200 flex-grow m-2 before:bg-[#fff]">Next</SimpleCard>
+          <SimpleCard icon="file-icons:php" className="enter-animation flex-grow m-2 before:bg-[#8093cf]" iconColor="#8093cf">PHP</SimpleCard>
+          <SimpleCard icon="vscode-icons:file-type-prisma" className="enter-animation lg:delay-100 flex-grow m-2 before:bg-[#e7e7e7]">Prisma</SimpleCard>
+          <SimpleCard icon="logos:kotlin-icon" className="enter-animation lg:delay-200 flex-grow m-2 before:bg-[#eb33a8]">Kotlin</SimpleCard>
           <SimpleCard icon="vscode-icons:file-type-sql" className="enter-animation flex-grow m-2 before:bg-[#fff04b]">SQL</SimpleCard>
           <SimpleCard icon="cib:debian" className="enter-animation lg:delay-100 flex-grow m-2 before:bg-[#d70751]" iconColor="#d70751">Linux</SimpleCard>
           <SimpleCard icon="bi:git" className="enter-animation lg:delay-200 flex-grow m-2 before:bg-[#e44c30]" iconColor="#e44c30">Git</SimpleCard>
         </div>
         <h2 className="text-center mt-20 mb-1 mx-4 font-semibold text-3xl text-blue">
-          TECNOLOGIAS QUE MAIS UTILIZO
+          TECNOLOGIAS QUE ESSE SITE UTILIZA
         </h2>
-        <p className="text-white font-semibold text-center mx-2 text-base">
-          Este site usa todas as citadas abaixo
-        </p>
         <StackCard icon="logos:react" title="React" titleColor="text-blue-react" className="mt-10 before:bg-blue-react">
           Criado pela equipe do Facebook e usado por grandes companhias mundo afora,
           o React torna a experiência do usuário com a interface mais eficiente. Esta
