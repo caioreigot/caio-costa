@@ -84,7 +84,7 @@ export default function Home() {
           e elegância que os componentes trazem para o desenvolvimento e da forma em que
           isso permite abstrair a lógica da aplicação.
         </StackCard>
-        <StackCard icon="teenyicons:nextjs-solid" title="Next.js" titleColor="text-white" className="mt-10 before:bg-white">
+        <StackCard icon="teenyicons:nextjs-solid" title="Next" titleColor="text-white" className="mt-10 before:bg-white">
           Assim como dito pela Vercel, Next.js é uma tecnologia pronta para produção.
           Com ela, podemos diminuir o trabalho que o navegador teria para ler
           os scripts do React responsáveis por renderizar toda a página. Por conta disso,
@@ -101,7 +101,7 @@ export default function Home() {
           que não foram utilizados, além de oferecer diversas classes utilitárias e ajudar a manter
           o layout responsivo.
         </StackCard>
-        <StackCard icon="vscode-icons:file-type-node" title="Node.js" titleColor="text-green-node" className="mt-10 before:bg-green-node">
+        <StackCard icon="vscode-icons:file-type-node" title="Node" titleColor="text-green-node" className="mt-10 before:bg-green-node">
           Minha tecnologia back-end favorita. Ela permite que eu use a linguagem na qual tenho
           maior domínio, o JavaScript, no lado do servidor, juntamente com o Node Package Manager,
           que conta com o maior repositório de softwares do mundo. Além de ser leve, tem um grande
